@@ -47,7 +47,15 @@ for(vec_size in vec_sizes) {
 sudo apt-get install -y libtcmalloc-minimal4 libjemalloc1
 ```
 
+Also need to install `mallinfo` pkg by Simon Urbanek.
+```r
+install.packages('mallinfo',,'http://www.rforge.net/')
+```
 
+In order to create graphs we will need couple of more packages:
+```r
+install.packages(c("ggplot2", "data.table"))
+```
 
 ## Big-to-small allocations
 
